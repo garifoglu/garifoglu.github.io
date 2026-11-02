@@ -16,6 +16,10 @@ export const anchors = [
     text: "Education",
   },
   {
+    href: "/#Journey",
+    text: "Journey",
+  },
+  {
     href: "/#Contact",
     text: "Contact",
   },
