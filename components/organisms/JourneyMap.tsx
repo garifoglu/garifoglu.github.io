@@ -10,12 +10,20 @@ const JourneyMapInner = dynamic(() => import("../molecules/JourneyMapInner"), {
 
 export default function JourneyMap() {
   return (
-    <Container id="Journey">
+    <Container id="Map">
       <h2>My journey</h2>
-      <p className="pb-8 text-base text-white/80">
-        From music teaching in Turkey to digital pedagogy in Finland. Click a marker to see what I did there.
+      <p className="pb-6 text-base text-white/80">
+        Places where I have worked and studied, and places I have visited. Click a marker to read more.
       </p>
       <JourneyMapInner />
+      <div className="flex flex-wrap gap-6 pt-4 text-sm text-white/70">
+        <span className="flex items-center gap-2">
+          <span className="map-pin map-pin-work" /> Worked or studied
+        </span>
+        <span className="flex items-center gap-2">
+          <span className="map-pin map-pin-visited" /> Visited
+        </span>
+      </div>
     </Container>
   );
 }

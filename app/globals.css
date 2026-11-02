@@ -57,10 +57,24 @@ a {
   @apply text-base text-white underline;
 }
 
-/* Dark look for the OpenStreetMap tiles (Journey map) */
-.map-tiles-dark {
+/* Map on the About me page: dark look for the OpenStreetMap tiles only in the dark theme */
+:root[data-theme="dark"] .map-tiles {
   filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9) saturate(0.6);
 }
-.leaflet-container {
+:root[data-theme="dark"] .leaflet-container {
   background: #1a1a1a;
+}
+.map-pin {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+.map-pin-work {
+  background: rgb(var(--accent));
+}
+.map-pin-visited {
+  background: #f5a524;
 }
