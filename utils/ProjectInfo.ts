@@ -7,7 +7,7 @@ export const stats: { prefix?: string; value?: number; text?: string; label: str
   { prefix: "≈", value: 700, label: "H5P activities converted to Canvas" },
   { text: "6 mo → 2 wk", label: "estimated manual work, done in two weeks" },
   { value: 60, label: "large courses reviewed" },
-  { value: 2, label: "Canvas courses for students (FI and EN)" },
+  { value: 3, label: "Canvas courses for students and teachers" },
 ];
 
 export const h5pWorkflow = [
@@ -41,8 +41,9 @@ export const phases = [
         desc: "Designed and built training and onboarding for the new platform.",
         points: [
           "Wrote a Moodle–Canvas terminology glossary to support the change.",
+          "Taught Canvas Studio to teachers and students as course material, with video, text and modules, and explained it with practical examples.",
           "Made video modules and instructions for Canvas Studio, and gave Finnish-language webinars with live Q&A.",
-          "Built two introductory Canvas courses for students, one in Finnish and one in English, with my own videos, texts and quizzes.",
+          "Built three introductory Canvas courses for students and teachers, with my own videos, texts and quizzes.",
           "Used ThingLink to train staff with videos and instructions in Finnish and English.",
           "Guided teachers in using AI for teaching materials.",
         ],
