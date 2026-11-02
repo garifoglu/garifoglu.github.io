@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+:root {
+  --bg: 23 23 23;
+  --fg: 242 241 230;
+  --line: 51 51 51;
+  --panel: 31 31 31;
+  --accent: 142 227 200;
+}
+
+:root[data-theme="light"] {
+  --bg: 250 249 244;
+  --fg: 23 23 23;
+  --line: 224 222 210;
+  --panel: 240 238 228;
+  --accent: 13 110 98;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-black font-inter text-white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  @apply text-2xl font-normal leading-none text-white md:text-3xl lg:text-4xl;
+}
+
+h2 {
+  @apply pb-14 text-xl md:text-2xl lg:text-3xl font-normal leading-none text-white;
+}
+
+h3 {
+  @apply text-2xl font-normal text-white;
+}
+
+h4 {
+  @apply text-xl font-normal text-white;
+}
+
+p {
+  @apply text-base font-normal text-white;
+}
+
+a {
+  @apply text-base text-white underline;
+}
