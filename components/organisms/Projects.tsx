@@ -1,7 +1,5 @@
 import Container from '../atoms/Container'
 import CardGrid from '../molecules/CardGrid'
-import Stats from '../molecules/Stats'
-import Workflow from '../molecules/Workflow'
 import { phases } from '@/utils/ProjectInfo'
 
 export default function Projects() {
@@ -13,9 +11,6 @@ export default function Projects() {
           Development unit, Helsinki. Two phases in 2026: a traineeship from
           March to the end of July, and an expert job in August and September.
         </p>
-
-        <Stats />
-        <Workflow />
 
         {/* To change the work details, please go to: utils/ProjectInfo.ts */}
         {phases.map((phase) => (

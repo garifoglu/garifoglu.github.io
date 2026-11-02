@@ -48,12 +48,12 @@ const fixedTypes = ["Drag-and-drop", "Image + audio", "Interactive video"];
 
 export default function Workflow() {
   return (
-    <div className="pb-16">
+    <div>
       <p className="pb-6 text-sm uppercase tracking-widest text-accent">
         How the H5P conversion worked
       </p>
 
-      <div className="rounded-md border-[1px] border-gray bg-panel p-6 md:p-8">
+      <div className="rounded-md border-[1px] border-gray bg-black/30 p-6 md:p-8">
         {/* Pipeline */}
         <ol className="relative grid gap-6 lg:grid-cols-5 lg:gap-4">
           {/* connecting line behind the icons (desktop) */}

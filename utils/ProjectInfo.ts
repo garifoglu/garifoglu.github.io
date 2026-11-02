@@ -2,13 +2,20 @@
 // Education Support and Development unit, 2026.
 // Two phases: the traineeship (March to end of July) and the expert job (August to September).
 
-// Numeric stats count up when scrolled into view; stats with only `text` are shown as they are.
-export const stats: { prefix?: string; value?: number; text?: string; label: string }[] = [
-  { prefix: "≈", value: 700, label: "H5P activities converted to Canvas" },
-  { text: "6 mo → 2 wk", label: "estimated manual work, done in two weeks" },
-  { value: 60, label: "large courses reviewed" },
-  { value: 3, label: "Canvas courses for students and teachers" },
-];
+// A stat belongs to the card it is written in. Numeric stats count up when scrolled into view;
+// stats with only `text` are shown as they are.
+export type Stat = { prefix?: string; value?: number; text?: string; label: string };
+
+export type CardInfo = {
+  title: string;
+  desc: string;
+  points: string[];
+  tags: string[];
+  stats?: Stat[];
+  workflow?: boolean; // shows the H5P workflow diagram inside the card
+};
+
+export type Phase = { title: string; period: string; summary: string; cards: CardInfo[] };
 
 export const h5pWorkflow = [
   { title: "Moodle", desc: "≈700 H5P activities and quizzes" },
@@ -18,7 +25,7 @@ export const h5pWorkflow = [
   { title: "Canvas", desc: "Injected into the Swedish, English and Sign Language courses" },
 ];
 
-export const phases = [
+export const phases: Phase[] = [
   {
     title: "Digital Pedagogy Trainee",
     period: "16.3. – 31.7.2026",
@@ -48,6 +55,7 @@ export const phases = [
           "Guided teachers in using AI for teaching materials.",
         ],
         tags: ["Canvas Studio", "ThingLink", "Webinars", "Onboarding"],
+        stats: [{ value: 3, label: "Canvas courses for students and teachers" }],
       },
       {
         title: "RAG-based AI agent for the Canvas transition",
@@ -69,6 +77,8 @@ export const phases = [
           "About six months of manual work was finished in two weeks.",
         ],
         tags: ["Python", "Claude", "HTML", "CSS", "H5P", "API"],
+        stats: [{ prefix: "≈", value: 700, label: "H5P activities converted to Canvas" }],
+        workflow: true,
       },
       {
         title: "Canvas administration and IT support",
@@ -99,6 +109,7 @@ export const phases = [
           "Fixed deficiencies and updated the courses when needed.",
         ],
         tags: ["Course design", "Accessibility", "Quality assurance"],
+        stats: [{ value: 60, label: "large courses reviewed" }],
       },
       {
         title: "Teacher support after go-live",
