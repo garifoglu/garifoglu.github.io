@@ -26,14 +26,15 @@ export const places: { name: string; pos: [number, number]; text: string }[] = [
 export default function JourneyMapInner() {
   return (
     <MapContainer
-      center={[55, 27]}
-      zoom={4}
+      bounds={L.latLngBounds(places.map((p) => p.pos))}
+      boundsOptions={{ padding: [40, 40] }}
       scrollWheelZoom={false}
       className="h-[420px] w-full rounded-lg md:h-[520px]"
     >
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
-        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+        className="map-tiles-dark"
       />
       <Polyline positions={places.map((p) => p.pos)} pathOptions={{ color: "#888", weight: 2, dashArray: "6 6" }} />
       {places.map((p) => (
