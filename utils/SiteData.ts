@@ -90,13 +90,13 @@ export const experience = [
   {
     period: "Jun 2019 – Jun 2021",
     title: "Music Teacher",
-    place: "Lehtimäen Erityiskansanopisto, Alajärvi",
+    place: "Lehtimäen Erityiskansanopisto, Lehtimäki",
     desc: "Part-time music teaching for learners with special needs: guitar, piano, drums, percussion and vocals.",
   },
   {
     period: "Aug 2018 – Jun 2019",
     title: "Erasmus+",
-    place: "Lehtimäen Erityiskansanopisto, Alajärvi",
+    place: "Lehtimäen Erityiskansanopisto, Lehtimäki",
     desc: "Supported art and music teachers in special education and led and conducted the school band.",
   },
   {
