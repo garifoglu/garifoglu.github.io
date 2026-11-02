@@ -33,8 +33,12 @@ export default function JourneyMapInner() {
         <Marker key={p.name} position={p.pos} icon={pin(p.kind)}>
           <Popup>
             <strong>{p.name}</strong>
-            <br />
-            {p.text}
+            {p.text && (
+              <>
+                <br />
+                {p.text}
+              </>
+            )}
           </Popup>
         </Marker>
       ))}
