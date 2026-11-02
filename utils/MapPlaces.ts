@@ -12,7 +12,7 @@ export type Place = {
 export const places: Place[] = [
   { kind: "work", name: "Kırıkkale", pos: [39.8468, 33.5153], text: "Music science, bachelor's and master's, pedagogical studies (2010–2018)" },
   { kind: "work", name: "Ankara", pos: [39.9334, 32.8597], text: "Music teacher, Cemal Gazeloglu Art Center (2015–2018)" },
-  { kind: "work", name: "Alajärvi", pos: [63.0, 23.8167], text: "Erasmus+ and music teacher, Lehtimäen Erityiskansanopisto (2018–2021)" },
+  { kind: "work", name: "Lehtimäki", pos: [62.7886, 23.9], text: "Erasmus+ and music teacher, Lehtimäen Erityiskansanopisto (2018–2021)" },
   { kind: "work", name: "Jyväskylä", pos: [62.2426, 25.7473], text: "Pedagogical studies, JAMK (2021–2023)" },
   { kind: "work", name: "Kokkola", pos: [63.8385, 23.1307], text: "ICT Engineering, Centria (2023–2027)" },
   { kind: "work", name: "Helsinki", pos: [60.1699, 24.9384], text: "Digital pedagogy, Humak (2026)" },
@@ -30,7 +30,7 @@ places.push(
   // Ostrobothnia and the west coast
   v("Vaasa", 63.096, 21.6158),
   v("Laihia", 62.9758, 22.01),
-  v("Lehtimäki", 62.7886, 23.9),
+  v("Alajärvi", 63.0, 23.8167),
   v("Lapua", 62.97, 23.0),
   v("Kauhava", 63.1010, 23.064),
   v("Alaharma", 63.2, 22.95),
