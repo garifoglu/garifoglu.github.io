@@ -115,6 +115,7 @@ places.push(
   v("Hailuoto", 65.017, 24.717),
   v("Vaala", 64.46, 26.82),
   v("Kemi", 65.7369, 24.5637),
+  v("Rovaniemi", 66.5039, 25.7294),
   v("Haparanda", 65.835, 24.138, "Sweden, across the border from Tornio"),
   v("Levi", 67.804, 24.803),
   v("Muonio", 67.956, 23.681),
