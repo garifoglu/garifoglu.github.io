@@ -44,19 +44,19 @@ export const education = [
   },
   {
     period: "Dec 2021 – Feb 2023",
-    title: "Pedagogical studies (60 ECTS)",
+    title: "Pedagogical studies",
     place: "JAMK University of Applied Sciences, Jyväskylä",
     desc: "General pedagogy, curricula, teaching materials, teaching practice and the Finnish education system.",
   },
   {
     period: "Feb 2015 – Aug 2018",
-    title: "Master's degree in Music (116 ECTS)",
+    title: "Master's degree in Music",
     place: "Kırıkkale University",
     desc: "Music research methods, music sociology, music analysis and multidisciplinary studies. Recognised by the Finnish National Agency for Education (Opetushallitus).",
   },
   {
     period: "Jul 2014 – Jan 2015",
-    title: "Pedagogical studies (38 credits)",
+    title: "Pedagogical studies",
     place: "Kırıkkale University",
     desc: "Developmental psychology, curricula and teaching, special education methods, assessment, educational technology and learning material development, guidance.",
   },
